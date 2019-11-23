@@ -1,3 +1,4 @@
 from django.contrib import admin
+from .models import Routine, Workout, Goal
 
-# Register your models here.
+admin.site.register([Routine, Workout, Goal])
