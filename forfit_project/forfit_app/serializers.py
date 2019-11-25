@@ -17,4 +17,4 @@ class RoutineSerializer(serializers.ModelSerializer):
     workouts = WorkoutSerializer(many = True, read_only = True)
     class Meta:
         model = Routine
-        fields = ('id', 'name', 'week')
+        fields = ('id', 'name', 'week', 'workouts')
