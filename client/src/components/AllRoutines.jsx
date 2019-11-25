@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 export default class AllRoutines extends Component {
 
     state = {
-        error: "",
+        error: '',
         allRoutines: []
     }
 
@@ -30,7 +30,10 @@ export default class AllRoutines extends Component {
                 <h1> All Routines </h1>
                 {this.state.allRoutines.map((routine) =>{
                     return(
-                        <div> {routine.name} </div>
+                        <div>
+                            <p> {routine.name} </p>
+                            <p> {routine.week} </p>
+                        </div>
                     )
                 })}
             </div>
