@@ -5,6 +5,7 @@ import SingleRoutine from './components/SingleRoutine';
 import AllWorkouts from './components/AllWorkouts';
 import SingleWorkout from './components/SingleWorkout';
 import AllGoals from './components/AllGoals';
+import SingleGoal from './components/SingleGoal';
 import './App.css';
 
 
@@ -25,6 +26,7 @@ class App extends React.Component {
             <Route exact path = '/workouts' component = {AllWorkouts} />
             <Route exact path = '/workouts/:id' component = {SingleWorkout} /> 
             <Route exact path = '/goal' component = {AllGoals} />
+            <Route exact path = '/goal/:id' component = {SingleGoal} />
           </Switch>
 
         </div>

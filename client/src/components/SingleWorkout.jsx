@@ -21,7 +21,7 @@ export default class SingleWorkout extends Component {
     fetchSingleWorkout = async () => {
         try {
         const res = await axios.get(`/api/v1/workout/${this.props.match.params.id}`)
-        this.setState({ singleWorkout: res.data })
+        this.setState({singleWorkout: res.data})
         }
         catch (error) {
             console.log(error)
