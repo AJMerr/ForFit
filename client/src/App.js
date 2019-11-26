@@ -6,6 +6,7 @@ import AllWorkouts from './components/AllWorkouts';
 import SingleWorkout from './components/SingleWorkout';
 import AllGoals from './components/AllGoals';
 import SingleGoal from './components/SingleGoal';
+import NavBar from './components/NavBar'
 import './App.css';
 
 
@@ -16,10 +17,12 @@ class App extends React.Component {
       <Router>
         <div>
 
+          <NavBar />
+
           <div className="header">
 
           </div>
-
+            
           <Switch>
             <Route exact path = '/' component = {AllRoutines} />
             <Route exact path = '/routine/:id' component = {SingleRoutine} />
