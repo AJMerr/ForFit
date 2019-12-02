@@ -31,9 +31,9 @@ export default class AllRoutines extends Component {
                 <h1> All Routines </h1>
                 {this.state.allRoutines.map((routine) => {
                     return (
-                        <div>
+                        <div class="container">
                             <div class="row">
-                                <div class="col s6 m6">
+                                <div class="col s12 m6">
                                     <div class="card red darken-1">
                                         <div class="card-content white-text">
                                             <span class="card-title"> {routine.name} </span>
@@ -48,6 +48,11 @@ export default class AllRoutines extends Component {
                         </div>
                     )
                 })}
+                <button class="waves-effect waves-light btn red">
+                    <Link to={`/newroutine`}>
+                        Create Routine 
+                    </Link>
+                </button>
             </div>
         )
     }
