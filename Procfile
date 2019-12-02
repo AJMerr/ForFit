@@ -1,0 +1,1 @@
+web: gunicorn forfit_project.wsgi --log-file -
