@@ -10,7 +10,7 @@ class GoalSerializer(serializers.ModelSerializer):
 class WorkoutSerializer(serializers.ModelSerializer):
     class Meta:
         model = Workout
-        fields = ('id', 'name', 'day', 'description', 'sets', 'reps')
+        fields = ('id', 'name', 'day', 'description', 'sets', 'reps', 'routine')
 
 
 class RoutineSerializer(serializers.ModelSerializer):

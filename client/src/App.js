@@ -9,6 +9,7 @@ import SingleGoal from './components/SingleGoal';
 import NavBar from './components/NavBar'
 import CreateRoutine from './components/CreateRoutine';
 import CreateGoal from './components/CreateGoal';
+import CreateWorkout from './components/CreateWorkout';
 import './App.css';
 
 
@@ -32,8 +33,9 @@ class App extends React.Component {
             <Route exact path = '/workouts/:id' component = {SingleWorkout} /> 
             <Route exact path = '/goal' component = {AllGoals} />
             <Route exact path = '/goal/:id' component = {SingleGoal} />
-            <Route exact path = '/newroutine' component = {CreateRoutine} />
+            <Route exact path = '/newroutine/:workoutid' component = {CreateRoutine} />
             <Route exact path = '/newgoal' component = {CreateGoal} />
+            <Route exact path = '/newworkout' component = {CreateWorkout} />
           </Switch>
 
         </div>

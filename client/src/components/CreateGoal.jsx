@@ -56,7 +56,7 @@ export default class CreateGoal extends Component {
                                     <label for="end_weight">End Weight</label>
                                 </div>
                             </div>
-                            <button class="btn waves-effect waves-light" onClick={this.createRoutine}>Submit
+                            <button class="btn waves-effect waves-light" onClick={this.createGoal}>Submit
                             <i class="material-icons right">send</i>
                             </button>
                         </form>
