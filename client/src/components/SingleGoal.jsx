@@ -20,11 +20,11 @@ export default class SingleGoal extends Component {
     fetchSingleGoal = async () => {
         try {
             const res = await axios.get(`/api/v1/goal/${this.props.match.params.id}`)
-            this.setState({singleGoal: res.data})
+            this.setState({ singleGoal: res.data })
         }
         catch (error) {
             console.log(error)
-            this.setState({error: error.message})
+            this.setState({ error: error.message })
         }
     }
 
@@ -35,6 +35,24 @@ export default class SingleGoal extends Component {
                 <p> {this.state.singleGoal.start_weight} </p>
                 <p> {this.state.singleGoal.current_weight} </p>
                 <o> {this.state.singleGoal.end_weight} </o>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m6">
+                        <div class="card red darken-1">
+                            <div class="card-content white-text">
+                                <span class="card-title"> {workout.name} </span>
+                                <p> {workout.day} </p>
+                                <p> {workout.sets} </p>
+                                <p> {workout.reps} </p>
+                                <p> {workout.description} </p>
+                            </div>
+                            <div class="card-action">
+                                <Link to={`/`}>Home</Link>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         )
     }
