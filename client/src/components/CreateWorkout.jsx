@@ -31,7 +31,7 @@ export default class CreateWorkout extends Component {
                 description: this.state.newWorkout.description,
                 sets: this.state.newWorkout.sets,
                 reps: this.state.newWorkout.reps,
-                routine: this.props.match.params.workoutid
+                routine: this.props.match.params.workoutid  
             })
         }
     }
