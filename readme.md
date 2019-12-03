@@ -1,6 +1,6 @@
 # ForFit
-![/wireframe_ff.jpg](wireframe_ff.jpg)
-![/erd_ff.jpg](erd_ff.jpg)
+![wireframe_ff.jpg](wireframe_ff.jpg)
+![erd_ff.jpg](erd_ff.jpg)
 
 
 # Overview 
