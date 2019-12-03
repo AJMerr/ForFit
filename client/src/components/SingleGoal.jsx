@@ -30,7 +30,6 @@ export default class SingleGoal extends Component {
 
     render() {
         return (
-
             <div class="container">
                 <div class="row">
                     <h1 class="center-align"> Your Goals </h1>

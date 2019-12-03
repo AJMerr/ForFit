@@ -43,7 +43,7 @@ export default class AllWorkouts extends Component {
                                             <p> {workout.description} </p>
                                         </div>
                                         <div class="card-action">
-                                            <Link to={`/`}>Home</Link>
+                                        <Link to={`/workouts/${workout.id}`}>See Workout</Link>
                                         </div>
                                     </div>
                                 </div>
