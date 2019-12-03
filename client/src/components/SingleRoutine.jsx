@@ -32,7 +32,7 @@ export default class SingleRoutine extends Component {
         return (
             <div>
                 <h1 class="center-align"> {this.state.singleRoutine.name} </h1>
-                <p class="center-align"> {this.state.singleRoutine.week} </p>
+                <p class="center-align" > {this.state.singleRoutine.week} </p>
                 <div>
                     {this.state.singleRoutine.workouts.map(workout => (
                         <div class="container">

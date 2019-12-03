@@ -36,6 +36,8 @@ export default class CreateWorkout extends Component {
         }
     }
 
+    
+
     render() {
         return (
             <div>
