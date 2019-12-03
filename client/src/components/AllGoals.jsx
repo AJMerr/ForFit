@@ -42,7 +42,7 @@ export default class AllGoals extends Component {
                                             <p> {goals.end_weight} </p>
                                         </div>
                                         <div class="card-action">
-                                            <Link to={`/`}>Home</Link>
+                                        <Link to={`/goal/${goals.id}`}>See Goal</Link>
                                         </div>
                                     </div>
                                 </div>

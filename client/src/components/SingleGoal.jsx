@@ -30,22 +30,17 @@ export default class SingleGoal extends Component {
 
     render() {
         return (
-            <div>
-                <h1> {this.state.singleGoal.name} </h1>
-                <p> {this.state.singleGoal.start_weight} </p>
-                <p> {this.state.singleGoal.current_weight} </p>
-                <o> {this.state.singleGoal.end_weight} </o>
-            </div>
+
             <div class="container">
                 <div class="row">
+                    <h1 class="center-align"> Your Goals </h1>
                     <div class="col s12 m6">
                         <div class="card red darken-1">
                             <div class="card-content white-text">
-                                <span class="card-title"> {workout.name} </span>
-                                <p> {workout.day} </p>
-                                <p> {workout.sets} </p>
-                                <p> {workout.reps} </p>
-                                <p> {workout.description} </p>
+                                <span class="card-title"> {this.state.singleGoal.name} </span>
+                                <p> {this.state.singleGoal.start_weight} </p>
+                                <p> {this.state.singleGoal.current_weight} </p>
+                                <p> {this.state.singleGoal.end_weight} </p>
                             </div>
                             <div class="card-action">
                                 <Link to={`/`}>Home</Link>
