@@ -28,7 +28,7 @@ export default class AllRoutines extends Component {
     render() {
         return (
             <div>
-                <h1> All Routines </h1>
+                <h1 class="center-align"> All Routines </h1>
                 {this.state.allRoutines.map((routine) => {
                     return (
                         <div class="container">

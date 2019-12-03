@@ -33,7 +33,7 @@ class App extends React.Component {
             <Route exact path = '/workouts/:id' component = {SingleWorkout} /> 
             <Route exact path = '/goal' component = {AllGoals} />
             <Route exact path = '/goal/:id' component = {SingleGoal} />
-            <Route exact path = '/newroutine/:workoutid' component = {CreateRoutine} />
+            <Route exact path = '/newroutine' component = {CreateRoutine} />
             <Route exact path = '/newgoal' component = {CreateGoal} />
             <Route exact path = '/newworkout' component = {CreateWorkout} />
           </Switch>

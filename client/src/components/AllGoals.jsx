@@ -28,7 +28,7 @@ export default class AllGoals extends Component {
     render() {
         return (
             <div>
-                <h1> All Goals </h1>
+                <h1 class="center-align"> All Goals </h1>
                 {this.state.allGoals.map((goals) => {
                     return (
                         <div class="container">

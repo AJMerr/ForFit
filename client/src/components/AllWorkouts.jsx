@@ -28,7 +28,7 @@ export default class AllWorkouts extends Component {
     render() {
         return (
             <div>
-                <h1> All Workouts </h1>
+                <h1 class="center-align"> All Workouts </h1>
                 {this.state.allWorkouts.map((workout) => {
                     return (
                         <div class="container">
